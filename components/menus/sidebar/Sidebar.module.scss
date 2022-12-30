@@ -1,0 +1,50 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px 0;
+  min-height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  background: var(--bg2);
+  border-right: 1px solid var(--bg4);
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  p {
+    padding: 0 15px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid var(--bg4);
+    height: 1px;
+    width: 100%;
+  }
+  .footerLinks {
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    p {
+      font-size: 11px;
+      margin: 0;
+      margin-bottom: 10px;
+      padding: 0;
+      a {
+        color: var(--fg2);
+        &:hover {
+          color: var(--fg3);
+        }
+        &:active:hover {
+          color: var(--fg4);
+        }
+      }
+    }
+  }
+}

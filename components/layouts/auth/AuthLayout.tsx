@@ -1,9 +1,10 @@
 import Head from 'next/head';
-import styles from './layout.module.css';
+import styles from './layout.module.scss';
 
-export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<'div'> {}
+export interface IAuthLayout extends React.ComponentPropsWithoutRef<'div'> {}
+
 export const siteTitle = 'Amaze Market';
-const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
+const PrimaryLayout: React.FC<IAuthLayout> = ({ children }) => {
   return (
     <div className={styles.mainWrapper}>
       <Head>
@@ -19,9 +20,7 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
-      {/* <Header /> */}
       <div className={styles.mainBox}>
-        {/* <Menu /> */}
         <main className={styles.mainContent}>{children}</main>
       </div>
     </div>

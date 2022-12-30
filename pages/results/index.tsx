@@ -1,5 +1,5 @@
 import { GetServerSideProps } from 'next';
-import PrimaryLayout from '../../components/layouts/base/layout';
+import PrimaryLayout from '../../components/layouts/base/PrimaryLayout';
 import SearchResult from '../../components/utility/search-result/SearchResult';
 import { ISearchData } from '../../lib/search/types';
 import { IApiSearchResponseData } from '../api/search';

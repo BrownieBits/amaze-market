@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import PrimaryLayout from '../components/layouts/base/layout';
+import PrimaryLayout from '../components/layouts/base/PrimaryLayout';
 // import Date from '../components/date';
 
 import Image from 'next/image';
