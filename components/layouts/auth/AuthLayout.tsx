@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from './layout.module.scss';
+import styles from './AuthLayout.module.scss';
 
 export interface IAuthLayout extends React.ComponentPropsWithoutRef<'div'> {}
 
