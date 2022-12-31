@@ -15,15 +15,9 @@ const SearchResult: React.FC<ISearchResult> = ({
       {...divProps}
       className={`flex flex-col w-5/6 max-w-screen-md space-y-1 ${className} `}
     >
-      <Link href={url}>
-        <a
-          className="cursor:pointer hover:underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <p>{url}</p>
-          <p className="text-blue-600 text-xl ">{title}</p>
-        </a>
+      <Link href={url} passHref>
+        <p>{url}</p>
+        <p className="text-blue-600 text-xl ">{title}</p>
       </Link>
       <p>{text}</p>
     </div>

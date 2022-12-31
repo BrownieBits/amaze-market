@@ -11,7 +11,7 @@ const ProtectedRoute: React.FC<IProtectedRoute> = ({ children }) => {
   const { user } = useAuth();
   useEffect(() => {
     if (!user) {
-      router.push('/signin');
+      router.push('/sign-in');
     }
   }, [router, user]);
 

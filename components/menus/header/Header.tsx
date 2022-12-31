@@ -42,7 +42,7 @@ const Header: React.FC<IHeader> = () => {
               className="small"
               onClick={() => {
                 logOut();
-                router.push('/signin');
+                router.push('/sign-in');
               }}
             >
               <FontAwesomeIcon icon={'fa-user' as IconProp} />
@@ -51,7 +51,7 @@ const Header: React.FC<IHeader> = () => {
           </div>
         ) : (
           <div className={styles.userItem}>
-            <Link href="/signin" passHref>
+            <Link href="/sign-in" passHref>
               <button className="small">
                 <FontAwesomeIcon icon={'fa-user' as IconProp} />
                 Sign In

@@ -6,14 +6,17 @@
 .mainBox {
   display: flex;
   flex-wrap: wrap;
+  min-height: 100vh;
+  min-width: 100%;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
 }
 
 .mainContent {
-  flex: 1;
-  margin: 15px auto;
-  max-width: 2270px;
-  padding: 0 15px;
+  margin: 15px;
+  max-width: 300px;
   width: 100%;
+  padding: 15px;
 }

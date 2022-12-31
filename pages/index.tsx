@@ -1,9 +1,5 @@
-import Link from 'next/link';
-import PrimaryLayout from '../components/layouts/base/PrimaryLayout';
-// import Date from '../components/date';
-
-import Image from 'next/image';
 import { useRouter } from 'next/router';
+import PrimaryLayout from '../components/layouts/base/PrimaryLayout';
 import { NextPageWithLayout } from './page';
 
 const Home: NextPageWithLayout = () => {
@@ -11,19 +7,7 @@ const Home: NextPageWithLayout = () => {
 
   return (
     <section className="flex flex-col items-center gap-y-5 mt-12 sm:mt-36">
-      <Image
-        src="/Google.png"
-        alt="Google Logo"
-        width={272}
-        height={92}
-        priority
-      />
-      <p>
-        Google offered in:{' '}
-        <Link href="/" locale={locale === 'en' ? 'fr' : 'en'}>
-          Français
-        </Link>
-      </p>
+      <h1>Home</h1>
     </section>
   );
 };

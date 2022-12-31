@@ -11,7 +11,7 @@ import './globals.scss';
 import { NextPageWithLayout } from './page';
 
 library.add(fas, fab);
-const noAuthRequired = ['/', '/signin', '/signup'];
+const noAuthRequired = ['/', '/sign-in', '/sign-up'];
 
 interface AppPropsWithLayout extends AppProps {
   Component: NextPageWithLayout;
