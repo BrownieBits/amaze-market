@@ -57,7 +57,7 @@ const Header: React.FC<IHeader> = () => {
               </button>
             ) : (
               <button
-                className="primary small"
+                className={`primary small ${styles.iconOnly}`}
                 onClick={() => {
                   logOut();
                   router.push('/sign-in');
