@@ -56,7 +56,7 @@ const MobileHeader: React.FC<IMobileHeader> = () => {
           <FontAwesomeIcon icon={'fa-house' as IconProp} />
           <p>Home</p>
         </Link>
-        <Link className={styles.item} href="/" passHref>
+        <Link className={styles.item} href="/subscriptions" passHref>
           <FontAwesomeIcon icon={'fa-user-check' as IconProp} />
           <p>Subscriptions</p>
         </Link>
@@ -68,11 +68,11 @@ const MobileHeader: React.FC<IMobileHeader> = () => {
         >
           <FontAwesomeIcon icon={'fa-circle-plus' as IconProp} />
         </button>
-        <Link className={styles.item} href="/" passHref>
+        <Link className={styles.item} href="/likes" passHref>
           <FontAwesomeIcon icon={'fa-thumbs-up' as IconProp} />
           <p>Liked Items</p>
         </Link>
-        <Link className={styles.item} href="/" passHref>
+        <Link className={styles.item} href="/collections" passHref>
           <FontAwesomeIcon icon={'fa-layer-group' as IconProp} />
           <p>Collections</p>
         </Link>

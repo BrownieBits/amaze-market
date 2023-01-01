@@ -34,7 +34,7 @@ const Header: React.FC<IHeader> = () => {
       <div className={styles.searchBox}>&nbsp;</div>
       <div className={styles.userBox}>
         <div className={styles.userItem}>
-          <Link href="/" passHref>
+          <Link href="/cart" passHref>
             <FontAwesomeIcon icon={'fa-cart-shopping' as IconProp} />
           </Link>
         </div>
@@ -64,7 +64,6 @@ const Header: React.FC<IHeader> = () => {
                 }}
               >
                 <FontAwesomeIcon icon={'fa-user' as IconProp} />
-                {/* {user.displayName ? user.displayName : user.email} */}
               </button>
             )}
           </div>

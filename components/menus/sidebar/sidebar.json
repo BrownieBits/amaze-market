@@ -5,23 +5,23 @@
             "items": [
                 {
                     "title": "Home",
-                    "icon": "faSearch",
+                    "icon": "fa-house",
                     "url": "/"
                 },
                 {
                     "title": "Subscriptions",
                     "icon": "fa-user-check",
-                    "url": "/posts/first-post"
+                    "url": "/subscriptions"
                 },
                 {
                     "title": "Liked Items",
                     "icon": "fa-thumbs-up",
-                    "url": "/posts/first-post"
+                    "url": "/likes"
                 },
                 {
                     "title": "Your Products",
                     "icon": "fa-shirt",
-                    "url": "/posts/first-post"
+                    "url": "/your-products"
                 }
             ]
         },
@@ -31,47 +31,47 @@
                 {
                     "title": "Trending",
                     "icon": "fa-fire",
-                    "url": "/"
+                    "url": "/collections/trending"
                 },
                 {
                     "title": "New",
                     "icon": "fa-explosion",
-                    "url": "/posts/first-post"
+                    "url": "/collections/new"
                 },
                 {
                     "title": "Holiday",
                     "icon": "fa-candy-cane",
-                    "url": "/posts/first-post"
+                    "url": "/collections/holiday"
                 },
                 {
                     "title": "Staff Picks",
                     "icon": "fa-heart",
-                    "url": "/posts/first-post"
+                    "url": "/collections/staff-picks"
                 },
                 {
                     "title": "Pop Culture",
                     "icon": "fa-ticket",
-                    "url": "/posts/first-post"
+                    "url": "/collections/pop-culture"
                 },
                 {
                     "title": "T-Shirts",
                     "icon": "fa-shirt",
-                    "url": "/posts/first-post"
+                    "url": "/collections/t-shirts"
                 },
                 {
                     "title": "Outerwear",
                     "icon": "fa-hat-cowboy",
-                    "url": "/posts/first-post"
+                    "url": "/collections/outerwear"
                 },
                 {
                     "title": "Accessories",
                     "icon": "fa-mug-saucer",
-                    "url": "/posts/first-post"
+                    "url": "/collections/accessories"
                 },
                 {
                     "title": "Home Goods",
                     "icon": "fa-couch",
-                    "url": "/posts/first-post"
+                    "url": "/collections/home-goods"
                 }
             ]
         },
