@@ -1,9 +1,11 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useAuth } from '../../../lib/AuthContext/AuthContext';
 import styles from './Header.module.scss';
+
 export interface IHeader {}
 
 const Header: React.FC<IHeader> = () => {
@@ -38,16 +40,33 @@ const Header: React.FC<IHeader> = () => {
         </div>
         {user ? (
           <div className={styles.userItem}>
-            <button
-              className="small"
-              onClick={() => {
-                logOut();
-                router.push('/sign-in');
-              }}
-            >
-              <FontAwesomeIcon icon={'fa-user' as IconProp} />
-              {user.email}
-            </button>
+            {user.profileImage ? (
+              <button
+                className={styles.image}
+                onClick={() => {
+                  logOut();
+                  router.push('/sign-in');
+                }}
+              >
+                <Image
+                  src={user.profileImage}
+                  alt="Picture of the author"
+                  width="25"
+                  height="25"
+                />
+              </button>
+            ) : (
+              <button
+                className="primary small"
+                onClick={() => {
+                  logOut();
+                  router.push('/sign-in');
+                }}
+              >
+                <FontAwesomeIcon icon={'fa-user' as IconProp} />
+                {/* {user.displayName ? user.displayName : user.email} */}
+              </button>
+            )}
           </div>
         ) : (
           <div className={styles.userItem}>

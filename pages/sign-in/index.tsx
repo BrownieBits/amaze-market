@@ -11,13 +11,14 @@ import utils from '../utils.module.scss';
 import { NextPageWithLayout } from '../page';
 
 const SignIn: NextPageWithLayout = () => {
-  const { signIn } = useAuth();
+  const { user, signIn, updateUserInfo } = useAuth();
   const [data, setData] = useState({ email: '', password: '' });
   const router = useRouter();
   const handleSignIn = async (e: any) => {
     e.preventDefault();
     try {
       await signIn(data.email, data.password);
+      console.log('Signed In User', user);
       router.push('/');
     } catch (err) {
       console.log(err);

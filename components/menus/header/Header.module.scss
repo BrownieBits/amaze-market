@@ -10,6 +10,7 @@
     width: 240px;
     padding: 0 15px;
     display: flex;
+    align-items: center;
     svg {
       display: block;
       width: 103px;
@@ -38,9 +39,17 @@
         width: 16px;
       }
       button {
+        padding: 5px 1px;
+        &.image {
+          padding: 0;
+          overflow: hidden;
+          border-radius: 100%;
+          border-color: var(--bg2);
+        }
         svg {
           display: block;
           width: 20px;
+          padding-right: 0;
         }
       }
     }

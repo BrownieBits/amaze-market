@@ -11,6 +11,9 @@
   scrollbar-width: none;
   background: var(--bg2);
   border-right: 1px solid var(--bg4);
+  @media (max-width: 600px) {
+    display: none;
+  }
   &::-webkit-scrollbar {
     display: none;
   }

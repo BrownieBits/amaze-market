@@ -47,7 +47,7 @@ body {
 
 p {
   font-size: 14px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05rem;
 }
 
 a {
@@ -105,5 +105,11 @@ button {
     svg {
       padding-right: 10px;
     }
+  }
+  &.image {
+    padding: 0;
+    overflow: hidden;
+    border-radius: 100%;
+    border-color: var(--bg2);
   }
 }

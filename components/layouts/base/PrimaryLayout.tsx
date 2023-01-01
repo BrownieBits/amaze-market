@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from '../../menus/header/Header';
+import MobileHeader from '../../menus/mobile/MobileHeader';
 import Sidebar from '../../menus/sidebar/Sidebar';
 import styles from './PrimaryLayout.module.scss';
 
@@ -23,10 +24,11 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <Header />
-      <div className={styles.mainBox}>
+      <main className={styles.mainBox}>
         <Sidebar />
         <main className={styles.mainContent}>{children}</main>
-      </div>
+      </main>
+      <MobileHeader />
     </div>
   );
 };

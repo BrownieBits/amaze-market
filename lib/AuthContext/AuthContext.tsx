@@ -3,6 +3,7 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
+  updateProfile,
   UserCredential,
 } from 'firebase/auth';
 import {
@@ -15,22 +16,25 @@ import {
 import { auth } from '../Firebase/firebase';
 
 type Nullable<T> = T | null;
-interface IUser {
+export interface IUser {
   uid: string | null;
   email: string | null;
   displayName: string | null;
+  profileImage: string | null;
 }
 type authContextType = {
   user: Nullable<IUser>;
   signIn: (email: string, password: string) => Promise<UserCredential> | void;
   signUp: (email: string, password: string) => Promise<UserCredential> | void;
   logOut: () => void;
+  updateUserInfo: () => void;
 };
 const authContextDefaultValues: authContextType = {
   user: null,
   signIn: () => {},
   signUp: () => {},
   logOut: () => {},
+  updateUserInfo: () => {},
 };
 const AuthContext = createContext<authContextType>(authContextDefaultValues);
 
@@ -53,6 +57,7 @@ export function AuthProvider({ children }: Props) {
           uid: user.uid,
           email: user.email,
           displayName: user.displayName,
+          profileImage: user.photoURL,
         });
       } else {
         setUser(null);
@@ -71,12 +76,19 @@ export function AuthProvider({ children }: Props) {
   const logOut = async () => {
     await signOut(auth);
   };
-
+  const updateUserInfo = () => {
+    updateProfile(auth.currentUser!, {
+      displayName: 'Jane Q. User',
+      photoURL:
+        'https://lh3.googleusercontent.com/ogw/AOh-ky3wZTIgQYb4j7VijE0hwgKEbL8gfarj8YkiVPZQ=s32-c-mo',
+    });
+  };
   const value = {
     user,
     signIn,
     signUp,
     logOut,
+    updateUserInfo,
   };
   return (
     <>
