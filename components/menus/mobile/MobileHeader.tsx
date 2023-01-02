@@ -70,7 +70,7 @@ const MobileHeader: React.FC<IMobileHeader> = () => {
         </button>
         <Link className={styles.item} href="/likes" passHref>
           <FontAwesomeIcon icon={'fa-thumbs-up' as IconProp} />
-          <p>Liked Items</p>
+          <p>Likes</p>
         </Link>
         <Link className={styles.item} href="/collections" passHref>
           <FontAwesomeIcon icon={'fa-layer-group' as IconProp} />

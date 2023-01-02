@@ -1,3 +1,4 @@
+@use '../../../pages/variable';
 .mobileHeaderWrapper {
   // position: relative;
   .mobileHeader {
@@ -8,7 +9,7 @@
     padding: 10px 0;
     background: var(--bg2);
     border-top: 1px solid var(--bg4);
-    @media (max-width: 600px) {
+    @media (max-width: variable.$breakpoint-lg) {
       display: flex;
     }
     .item {
@@ -26,10 +27,10 @@
       &.big {
         border: 0;
         padding: 0;
-        font-size: 39px;
+        font-size: 30px;
         svg {
           padding-right: 0;
-          width: 39px;
+          width: 30px;
         }
       }
     }

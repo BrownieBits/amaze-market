@@ -11,7 +11,7 @@ import utils from '../utils.module.scss';
 import { NextPageWithLayout } from '../page';
 
 const SignIn: NextPageWithLayout = () => {
-  const { user, signIn, updateUserInfo } = useAuth();
+  const { user, signIn } = useAuth();
   const [data, setData] = useState({ email: '', password: '' });
   const router = useRouter();
   const handleSignIn = async (e: any) => {

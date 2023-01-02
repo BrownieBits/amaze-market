@@ -1,6 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import PrimaryLayout from '../../components/layouts/base/PrimaryLayout';
 import { NextPageWithLayout } from '../page';
 
@@ -17,7 +16,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   };
 };
 
-export const getStaticPaths: GetStaticPaths = async (context) => {
+export const getStaticPaths: GetStaticPaths = async () => {
   // const paths = getAllPostIds();
   const paths: any = [
     '/collections/new',
@@ -37,7 +36,6 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
 };
 
 const Collection: NextPageWithLayout<Props> = ({ id }) => {
-  const { locale } = useRouter();
   return (
     <>
       <Head>
