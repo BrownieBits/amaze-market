@@ -41,10 +41,16 @@ const Collection: NextPageWithLayout<Props> = ({ id }) => {
   return (
     <>
       <Head>
-        <title>{id.charAt(0).toUpperCase() + id.substring(1)} Collection</title>
+        <title>
+          {id.charAt(0).toUpperCase() + id.substring(1).replace('-', ' ')}{' '}
+          Collection
+        </title>
       </Head>
       <section className="flex flex-col items-center gap-y-5 mt-12 sm:mt-36">
-        <h1>{id.charAt(0).toUpperCase() + id.substring(1)} Collection</h1>
+        <h1>
+          {id.charAt(0).toUpperCase() + id.substring(1).replace('-', ' ')}{' '}
+          Collection
+        </h1>
       </section>
     </>
   );

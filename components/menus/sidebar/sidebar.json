@@ -81,17 +81,17 @@
                 {
                     "title": "Settings",
                     "icon": "fa-gear",
-                    "url": "/"
+                    "url": "/settings"
                 },
                 {
                     "title": "Help",
                     "icon": "fa-circle-question",
-                    "url": "/posts/first-post"
+                    "url": "/help"
                 },
                 {
                     "title": "Send Feedback",
                     "icon": "fa-message",
-                    "url": "/posts/first-post"
+                    "url": "/send-feedback"
                 }
             ]
         },
@@ -101,32 +101,32 @@
                 {
                     "title": "About",
                     "icon": "fa-circle-question",
-                    "url": "/"
+                    "url": "/about"
                 },
                 {
                     "title": "Press",
                     "icon": "fa-circle-question",
-                    "url": "/posts/first-post"
+                    "url": "/press"
                 },
                 {
                     "title": "Blog",
                     "icon": "fa-circle-question",
-                    "url": "/posts/first-post"
+                    "url": "/blog"
                 },
                 {
                     "title": "Contact Us",
                     "icon": "fa-circle-question",
-                    "url": "/posts/first-post"
+                    "url": "/contact-us"
                 },
                 {
                     "title": "Terms of Service",
                     "icon": "fa-circle-question",
-                    "url": "/posts/first-post"
+                    "url": "/terms"
                 },
                 {
                     "title": "Privacy Policy",
                     "icon": "fa-circle-question",
-                    "url": "/posts/first-post"
+                    "url": "/privacy"
                 }
             ]
         }

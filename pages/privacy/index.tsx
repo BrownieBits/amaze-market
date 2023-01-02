@@ -2,21 +2,21 @@ import Head from 'next/head';
 import PrimaryLayout from '../../components/layouts/base/PrimaryLayout';
 import { NextPageWithLayout } from '../page';
 
-const Collections: NextPageWithLayout = () => {
+const Privacy: NextPageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>Collections</title>
+        <title>Privacy Policy</title>
       </Head>
       <section className="flex flex-col items-center gap-y-5 mt-12 sm:mt-36">
-        <h1>Collections</h1>
+        <h1>Privacy Policy</h1>
       </section>
     </>
   );
 };
 
-export default Collections;
+export default Privacy;
 
-Collections.getLayout = (page) => {
+Privacy.getLayout = (page) => {
   return <PrimaryLayout>{page}</PrimaryLayout>;
 };
