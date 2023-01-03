@@ -1,0 +1,134 @@
+{
+    "sections": [
+        {
+            "section": "Main",
+            "items": [
+                {
+                    "title": "Home",
+                    "icon": "fa-house",
+                    "url": "/"
+                },
+                {
+                    "title": "Subscriptions",
+                    "icon": "fa-user-check",
+                    "url": "/subscriptions"
+                },
+                {
+                    "title": "Liked Items",
+                    "icon": "fa-thumbs-up",
+                    "url": "/likes"
+                },
+                {
+                    "title": "Your Products",
+                    "icon": "fa-shirt",
+                    "url": "/your-products"
+                }
+            ]
+        },
+        {
+            "section": "Explore",
+            "items": [
+                {
+                    "title": "Trending",
+                    "icon": "fa-fire",
+                    "url": "/collections/trending"
+                },
+                {
+                    "title": "New",
+                    "icon": "fa-explosion",
+                    "url": "/collections/new"
+                },
+                {
+                    "title": "Holiday",
+                    "icon": "fa-candy-cane",
+                    "url": "/collections/holiday"
+                },
+                {
+                    "title": "Staff Picks",
+                    "icon": "fa-heart",
+                    "url": "/collections/staff-picks"
+                },
+                {
+                    "title": "Pop Culture",
+                    "icon": "fa-ticket",
+                    "url": "/collections/pop-culture"
+                },
+                {
+                    "title": "T-Shirts",
+                    "icon": "fa-shirt",
+                    "url": "/collections/t-shirts"
+                },
+                {
+                    "title": "Outerwear",
+                    "icon": "fa-hat-cowboy",
+                    "url": "/collections/outerwear"
+                },
+                {
+                    "title": "Accessories",
+                    "icon": "fa-mug-saucer",
+                    "url": "/collections/accessories"
+                },
+                {
+                    "title": "Home Goods",
+                    "icon": "fa-couch",
+                    "url": "/collections/home-goods"
+                }
+            ]
+        },
+        {
+            "section": "Help",
+            "items": [
+                {
+                    "title": "Settings",
+                    "icon": "fa-gear",
+                    "url": "/settings"
+                },
+                {
+                    "title": "Help",
+                    "icon": "fa-circle-question",
+                    "url": "/help"
+                },
+                {
+                    "title": "Send Feedback",
+                    "icon": "fa-message",
+                    "url": "/send-feedback"
+                }
+            ]
+        },
+        {
+            "section": "Footer",
+            "items": [
+                {
+                    "title": "About",
+                    "icon": "fa-circle-question",
+                    "url": "/about"
+                },
+                {
+                    "title": "Press",
+                    "icon": "fa-circle-question",
+                    "url": "/press"
+                },
+                {
+                    "title": "Blog",
+                    "icon": "fa-circle-question",
+                    "url": "/blog"
+                },
+                {
+                    "title": "Contact Us",
+                    "icon": "fa-circle-question",
+                    "url": "/contact-us"
+                },
+                {
+                    "title": "Terms of Service",
+                    "icon": "fa-circle-question",
+                    "url": "/terms"
+                },
+                {
+                    "title": "Privacy Policy",
+                    "icon": "fa-circle-question",
+                    "url": "/privacy"
+                }
+            ]
+        }
+    ]
+}
