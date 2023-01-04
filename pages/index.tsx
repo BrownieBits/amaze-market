@@ -14,14 +14,14 @@ const upAndComingCreatorList: ICreatorList = {
   items: [
     {
       name: 'MrBeast',
-      url: '/',
+      url: '/creator/mrBeast',
       image: '/creators/mrBeast.jpeg',
       verified: true,
     },
     {
-      name: 'BrownieBits',
-      url: '/',
-      image: '/creators/mrBeast.jpeg',
+      name: 'Previewd',
+      url: '/creator/previewd',
+      image: '/creators/previewd.jpeg',
       verified: false,
     },
   ],
@@ -32,8 +32,20 @@ const topCreatorList: ICreatorList = {
   items: [
     {
       name: 'MrBeast',
-      url: '/',
+      url: '/creator/mrBeast',
       image: '/creators/mrBeast.jpeg',
+      verified: true,
+    },
+    {
+      name: 'MrBeast',
+      url: '/creator/mrBeast',
+      image: '/creators/mrBeast.jpeg',
+      verified: true,
+    },
+    {
+      name: 'MrBeast',
+      url: '/creator/previewd',
+      image: '/creators/previewd.jpeg',
       verified: true,
     },
     {
@@ -44,26 +56,14 @@ const topCreatorList: ICreatorList = {
     },
     {
       name: 'MrBeast',
-      url: '/',
+      url: '/creator/mrBeast',
       image: '/creators/mrBeast.jpeg',
       verified: true,
     },
     {
-      name: 'MrBeast',
-      url: '/',
-      image: '/creators/mrBeast.jpeg',
-      verified: true,
-    },
-    {
-      name: 'MrBeast',
-      url: '/',
-      image: '/creators/mrBeast.jpeg',
-      verified: true,
-    },
-    {
-      name: 'BrownieBits',
-      url: '/',
-      image: '/creators/mrBeast.jpeg',
+      name: 'Moriah Elizabeth',
+      url: '/creator/moriah-elizabeth',
+      image: '/creators/moriahElizabeth.jpeg',
       verified: false,
     },
   ],
@@ -73,24 +73,24 @@ const whatsHotProductList: IProductList = {
   url: '/',
   items: [
     {
-      name: 'Product title',
-      type: 'Premium Tee',
+      name: 'Adam Mug',
+      type: 'Mug',
       url: '/',
-      price: '$19.99',
-      productImage: '/creators/mrBeast.jpeg',
-      creatorImage: '/creators/mrBeast.jpeg',
-      creatorUrl: '/creator/mrbeast',
-      creatorName: 'MrBeast',
+      price: '$9.99',
+      productImage: '/products/previewd_adam_mug.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
       creatorVerified: true,
     },
     {
-      name: 'Product title',
-      type: 'Zip Up Hoodie',
+      name: 'Behold Comma',
+      type: 'Premium Tee',
       url: '/',
       price: '$19.99',
-      productImage: '/creators/previewd.jpeg',
+      productImage: '/products/previewd_behold_green.jpeg',
       creatorImage: '/creators/previewd.jpeg',
-      creatorUrl: '/creator/mrbeast',
+      creatorUrl: '/creator/previewd',
       creatorName: 'Previewd',
       creatorVerified: true,
     },
@@ -99,7 +99,7 @@ const whatsHotProductList: IProductList = {
 
 const Home: NextPageWithLayout = () => {
   return (
-    <>
+    <div className="content">
       <Head>
         <title>Home</title>
       </Head>
@@ -118,7 +118,7 @@ const Home: NextPageWithLayout = () => {
         url={topCreatorList.url}
         items={topCreatorList.items}
       />
-    </>
+    </div>
   );
 };
 
