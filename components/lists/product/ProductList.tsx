@@ -11,16 +11,20 @@ export interface IProductList {
 const ProductList: React.FC<IProductList> = ({ title, url, items }) => {
   return (
     <>
-      <section className={styles.title}>
-        {title != '' ? <p>{title}</p> : <></>}
-        {url != '' ? (
-          <Link href={url} passHref>
-            See More
-          </Link>
-        ) : (
-          <></>
-        )}
-      </section>
+      {title != '' && url != '' ? (
+        <section className={styles.title}>
+          {title != '' ? <p>{title}</p> : <></>}
+          {url != '' ? (
+            <Link href={url} passHref>
+              See More
+            </Link>
+          ) : (
+            <></>
+          )}
+        </section>
+      ) : (
+        <></>
+      )}
       <section className={styles.creatorsWrapper}>
         {items.map((item, index) => {
           return (

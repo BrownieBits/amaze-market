@@ -6,9 +6,195 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import PrimaryLayout from '../../components/layouts/base/PrimaryLayout';
+import ProductList, {
+  IProductList,
+} from '../../components/lists/product/ProductList';
 import { db } from '../../lib/Firebase/firebase';
 import { NextPageWithLayout } from '../page';
 import styles from './Creator.module.scss';
+
+const whatsHotProductList: IProductList = {
+  title: '',
+  url: '',
+  items: [
+    {
+      name: 'Adam Mug',
+      type: 'Mug',
+      url: '/',
+      price: '$9.99',
+      productImage: '/products/previewd_adam_mug.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
+      creatorVerified: true,
+    },
+    {
+      name: 'Behold Comma',
+      type: 'Premium Tee',
+      url: '/',
+      price: '$19.99',
+      productImage: '/products/previewd_behold_green.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
+      creatorVerified: true,
+    },
+    {
+      name: 'Fix It',
+      type: 'Premium Tee',
+      url: '/',
+      price: '$19.99',
+      productImage: '/products/previewd_fixit_purple.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
+      creatorVerified: true,
+    },
+    {
+      name: 'Hey Peaches',
+      type: 'Premium Tee',
+      url: '/',
+      price: '$19.99',
+      productImage: '/products/previewd_peaches_black.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
+      creatorVerified: true,
+    },
+    {
+      name: 'Adam Mug',
+      type: 'Mug',
+      url: '/',
+      price: '$9.99',
+      productImage: '/products/previewd_adam_mug.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
+      creatorVerified: true,
+    },
+    {
+      name: 'Behold Comma',
+      type: 'Premium Tee',
+      url: '/',
+      price: '$19.99',
+      productImage: '/products/previewd_behold_green.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
+      creatorVerified: true,
+    },
+    {
+      name: 'Fix It',
+      type: 'Premium Tee',
+      url: '/',
+      price: '$19.99',
+      productImage: '/products/previewd_fixit_purple.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
+      creatorVerified: true,
+    },
+    {
+      name: 'Hey Peaches',
+      type: 'Premium Tee',
+      url: '/',
+      price: '$19.99',
+      productImage: '/products/previewd_peaches_black.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
+      creatorVerified: true,
+    },
+    {
+      name: 'Adam Mug',
+      type: 'Mug',
+      url: '/',
+      price: '$9.99',
+      productImage: '/products/previewd_adam_mug.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
+      creatorVerified: true,
+    },
+    {
+      name: 'Behold Comma',
+      type: 'Premium Tee',
+      url: '/',
+      price: '$19.99',
+      productImage: '/products/previewd_behold_green.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
+      creatorVerified: true,
+    },
+    {
+      name: 'Fix It',
+      type: 'Premium Tee',
+      url: '/',
+      price: '$19.99',
+      productImage: '/products/previewd_fixit_purple.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
+      creatorVerified: true,
+    },
+    {
+      name: 'Hey Peaches',
+      type: 'Premium Tee',
+      url: '/',
+      price: '$19.99',
+      productImage: '/products/previewd_peaches_black.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
+      creatorVerified: true,
+    },
+    {
+      name: 'Adam Mug',
+      type: 'Mug',
+      url: '/',
+      price: '$9.99',
+      productImage: '/products/previewd_adam_mug.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
+      creatorVerified: true,
+    },
+    {
+      name: 'Behold Comma',
+      type: 'Premium Tee',
+      url: '/',
+      price: '$19.99',
+      productImage: '/products/previewd_behold_green.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
+      creatorVerified: true,
+    },
+    {
+      name: 'Fix It',
+      type: 'Premium Tee',
+      url: '/',
+      price: '$19.99',
+      productImage: '/products/previewd_fixit_purple.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
+      creatorVerified: true,
+    },
+    {
+      name: 'Hey Peaches',
+      type: 'Premium Tee',
+      url: '/',
+      price: '$19.99',
+      productImage: '/products/previewd_peaches_black.jpeg',
+      creatorImage: '/creators/previewd.jpeg',
+      creatorUrl: '/creator/previewd',
+      creatorName: 'Previewd',
+      creatorVerified: true,
+    },
+  ],
+};
 
 interface Props {
   id: string;
@@ -128,6 +314,13 @@ const Creator: NextPageWithLayout<Props> = ({
             About
           </Link>
         </div>
+      </section>
+      <section className="content">
+        <ProductList
+          title={whatsHotProductList.title}
+          url={whatsHotProductList.url}
+          items={whatsHotProductList.items}
+        />
       </section>
     </>
   );
